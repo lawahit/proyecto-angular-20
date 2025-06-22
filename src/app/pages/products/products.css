@@ -8,3 +8,34 @@
     padding: 10px;
     width: 25%;
 }
+
+.blur-text {
+  display: inline-block;
+  font-size: 3rem; /* Ajusta según necesites */
+  animation: blur-animation 1.5s ease-out forwards;
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(20px);
+  font-size: 4rem;
+}
+
+@keyframes blur-animation {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.blur-text-container {
+  text-align: center; /* Centrado horizontal simple */
+  width: 100%;
+  background-color: rgb(32, 27, 27);
+  color: white;
+}
+

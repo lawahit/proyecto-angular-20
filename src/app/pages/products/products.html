@@ -1,14 +1,27 @@
-<h1>Nuestros productos</h1>
-<img src="/img/banner1.jpg" alt="Moto">
+<div class="blur-text-container">
+  <span class="blur-text">Nuestros productos</span>
+</div>
+<img src="/img/Nothing-phone-1.jpg" alt="telefono">
+
 <section class="productos">
-    @for(producto of productos; track producto.id){
-        <article class="producto">
-            <img [src]="producto.imagen" [alt]="producto.nombre">
-            <h3>{{producto.nombre}}</h3>
-            <p>{{producto.descripcion}}</p>
-            <strong>{{producto.precio}}</strong>
-            <br>
-            <button>Ver más</button>
-        </article>
-    }
+  <ng-container *ngFor="let producto of productos; trackBy: trackById">
+    <article class="producto">
+      <img [src]="producto.imagen" [alt]="producto.nombre">
+      <h3>{{ producto.nombre }}</h3>
+      <p>{{ producto.descripcion }}</p>
+      <strong>{{ producto.precio }}</strong>
+      <br>
+      <button (click)="verMas(producto)">Ver más</button>
+    </article>
+  </ng-container>
 </section>
+
+
+<app-product-detail
+  *ngIf="modalVisible"
+  [producto]="productoSeleccionado"
+  (close)="cerrarModal()">
+</app-product-detail>
+
+
+
