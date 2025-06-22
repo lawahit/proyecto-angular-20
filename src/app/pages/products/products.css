@@ -39,3 +39,25 @@
   color: white;
 }
 
+
+.btn-ver-mas {
+  
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+
+  
+}
+
+.btn-ver-mas:hover {
+  background-color: #1558b0;
+}
+
+.btn-ver-mas:active {
+  background-color: #0d3c8a;
+}

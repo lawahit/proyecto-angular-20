@@ -25,7 +25,7 @@ export class Products {
     {
       id: 1,
       nombre: 'nothing phone 1',
-      descripcion : 'Un smartphone con pantalla OLED de 6.55 pulgadas, procesador Snapdragon 778G+ y cámara dual de 50 MP.',
+      descripcion : 'es el primer smartphone de Nothing, la compañía del ex fundador de OnePlus. El Phone (1) llega  con pantalla OLED de 6.55 pulgadas, procesador Snapdragon 778G+ una cámara dual trasera, con dos sensores de 50MP con estabilización óptica de imagen y una cámara selfie de 16MP.',
       precio: '5,999 $',
       imagen: '/img/nothing-phone-1-8.png',
       fabricante: 'Nothing Inc.',
@@ -36,7 +36,7 @@ export class Products {
     {
       id: 2,
       nombre: 'nothing phone 2',
-      descripcion: 'Un smartphone con pantalla OLED de 6.7 pulgadas, procesador Snapdragon 8+ Gen 1 y cámara dual de 50 MP.',
+      descripcion: 'Un smartphone con pantalla OLED de 6.7 pulgadas, procesador Snapdragon 8+ Gen 1 y cámara dual de 50 MP .',
       precio: '8,999 $',
       imagen: '/img/phone 2.webp'
     },
