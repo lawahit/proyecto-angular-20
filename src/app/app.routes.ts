@@ -4,6 +4,7 @@ import { About } from './pages/about/about';
 import { Productos } from './pages/products/products';
 import { Contact } from './pages/contact/contact';
 import { Multimedia } from './pages/multimedia/multimedia';
+import { Novedades } from './pages/novedades/novedades';
 
 export const routes: Routes = [
     {path: '', component:Home },
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path: 'productos', component:Productos},
     {path: 'contacto', component:Contact},
     {path: 'multimedia', component: Multimedia},
+    {path: 'novedades', component: Novedades},
     {path: '**', redirectTo: ''}
 ];

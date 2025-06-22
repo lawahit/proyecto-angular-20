@@ -1,0 +1,10 @@
+<section class="blog">
+  <ng-container *ngFor="let entrada of ntradas; trackBy: trackById">
+    <article class="entrada">
+      <img [src]="entrada.imagen" [alt]="entrada.titulo">
+      <h3>{{ entrada.titulo }}</h3>
+      <p class="fecha">{{ entrada.fecha }}</p>
+      <p>{{ entrada.descripcion }}</p>
+    </article>
+  </ng-container>
+</section>
